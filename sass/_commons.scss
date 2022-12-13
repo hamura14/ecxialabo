@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Serif+JP:wght@300;600;700&display=swap");
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  color: $font;
+  font-family: "Noto Serif JP", serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.8;
+  cursor: default;
+  width: 100%;
+
+  @include min-screen($tb) {
+    font-size: 16px;
+  }
+
+  @include min-screen($pc) {
+    line-height: 1.875;
+  }
+}
+
+a {
+  display: block;
+  transition: 0.5s;
+  color: $navy;
+  font-weight: bold;
+
+  &:hover {
+    opacity: 0.7;
+  }
+  &:active {
+    color: #5a748e;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+.not {
+  text-align: center;
+  padding: 50px 10px;
+
+  &-inner {
+    h2 {
+      font-weight: bold;
+      font-size: 22px;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.not-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+
+  a {
+    background: $purple;
+    width: 200px;
+    padding: 10px;
+    color: $white;
+    text-align: center;
+    border: 1px solid $purple;
+
+    &:hover {
+      background: $white;
+      color: $purple;
+    }
+  }
+}
+
+//---------------------btn---//
+.page_btn {
+  @include mincho;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 20px 0 50px 0;
+  @include min-screen($tb) {
+  }
+  @include min-screen($pc) {
+  }
+
+  a {
+    @include btnstyle;
+    color: $white;
+    width: 250px;
+    padding: 10px 20px 10px 20px;
+    font-size: 15px;
+  }
+  @include min-screen($tb) {
+  }
+  @include min-screen($pc) {
+    font-size: 16px;
+  }
+}
+
+//---------------------form---//
+.form_title {
+  text-align: center;
+  margin: 0 auto;
+  @include min-screen($tb) {
+  }
+  @include min-screen($pc) {
+    max-width: 940px;
+    padding-top: 30px;
+  }
+
+  &_text {
+    font-weight: bold;
+    font-size: 18px;
+    color: $red;
+    @include min-screen($tb) {
+      font-size: 34px;
+    }
+    @include min-screen($pc) {
+      font-size: 45px;
+      padding-top: 15px;
+    }
+  }
+
+  p {
+    color: $red;
+    padding: 0 20px 20px 20px;
+    @include min-screen($tb) {
+    }
+    @include min-screen($pc) {
+    }
+    a {
+      display: inline;
+    }
+  }
+}
+
+//---------------------form thx---//
+.form_title2 {
+  text-align: center;
+  margin: 0 auto;
+  @include min-screen($tb) {
+  }
+  @include min-screen($pc) {
+    max-width: 940px;
+    padding-top: 30px;
+  }
+
+  &_text {
+    font-weight: bold;
+    font-size: 22px;
+    padding-bottom: 20px;
+    @include min-screen($tb) {
+      font-size: 34px;
+    }
+    @include min-screen($pc) {
+      font-size: 35px;
+      padding-top: 15px;
+    }
+  }
+
+  p {
+    padding: 20px;
+    text-align: left;
+    @include min-screen($tb) {
+      text-align: left;
+    }
+    @include min-screen($pc) {
+      text-align: center;
+    }
+    a {
+      display: inline;
+      color: $purple;
+    }
+  }
+}
+//------------------------//
+
+.sp,
+.sp-tb,
+.sp-pc {
+  display: block;
+}
+
+.tb,
+.tb-pc,
+.pc {
+  display: none;
+}
+
+.i-sp,
+.i-sp-tb,
+.i-sp-pc {
+  display: inline-block;
+}
+
+.i-tb,
+.i-tb-pc,
+.i-pc {
+  display: none;
+}
+
+@media screen and (min-width: $tb) {
+  .tb,
+  .sp-tb,
+  .tb-pc {
+    display: block;
+  }
+
+  .sp,
+  .pc,
+  .sp-pc {
+    display: none;
+  }
+
+  .i-tb,
+  .i-sp-tb,
+  .i-tb-pc {
+    display: inline-block;
+  }
+
+  .i-sp,
+  .i-pc,
+  .i-sp-pc {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $pc) {
+  .tb-pc,
+  .pc,
+  .sp-pc {
+    display: block;
+  }
+
+  .sp,
+  .tb,
+  .sp-tb {
+    display: none;
+  }
+
+  .i-tb-pc,
+  .i-pc,
+  .i-sp-pc {
+    display: inline-block;
+  }
+
+  .i-sp,
+  .i-tb,
+  .i-sp-tb {
+    display: none;
+  }
+}
+
+a.clickNone {
+  text-decoration: none;
+  pointer-events: none;
+  cursor: default;
+}
+
+.background {
+  @include maxWidth;
+}
+
+// パンくずリスト
+.breadcrumb-list {
+  padding: 10px;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+  overflow-y: hidden;
+  @include min-screen($tb) {
+    padding: 24px;
+  }
+  @include min-screen($pc) {
+    @include maxwidthContent($width: 1000px, $side: 30px);
+    padding: 10px 0 40px 10px;
+  }
+
+  ul {
+    li {
+      position: relative;
+      display: table-cell;
+      vertical-align: middle;
+      padding-right: 42px;
+      white-space: nowrap;
+      font-size: 14px;
+      @include min-screen($pc) {
+        font-size: 14px;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      &:last-child:after {
+        display: none;
+      }
+
+      &::after {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 18px;
+        font-family: "Font Awesome 5 Free" !important;
+        font-weight: 900;
+        color: #333;
+        content: "\f054";
+      }
+
+      a {
+        color: $purple;
+        font-weight: bold;
+
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+}
+
+//------------------------//
+.orikaeshi {
+  font-size: 10px;
+  color: $yellow;
+  text-shadow: 0 0 3px $navy, 0 0 3px $navy, 0 0 3px $navy, 0 0 3px $navy, 0 0 3px $navy, 0 0 3px $navy, 0 0 3px $navy,
+    0 0 3px $navy, 0 0 3px $navy, 0 0 3px $navy, 0 0 3px $navy, 0 0 3px $navy, 0 0 3px $navy, 0 0 3px $navy,
+    0 0 3px $navy, 0 0 3px $navy;
+  @include min-screen($tb) {
+    font-size: 14px;
+  }
+  @include min-screen($pc) {
+    font-size: 11px;
+  }
+}
+.orikaeshi-2 {
+  font-size: 11px;
+  color: $red;
+  padding-bottom: 15px;
+  padding-top: 3px;
+  @include min-screen($tb) {
+    font-size: 14px;
+    padding-bottom: 15px;
+  }
+  @include min-screen($pc) {
+    font-size: 13px;
+    padding-bottom: 0;
+  }
+}
+
+.orikaeshi-3 {
+  font-size: 11px;
+  color: $red;
+  @include min-screen($tb) {
+    font-size: 14px;
+  }
+  @include min-screen($pc) {
+    font-size: 13px;
+  }
+}

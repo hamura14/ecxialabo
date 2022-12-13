@@ -1,0 +1,182 @@
+<section>
+  <!-------------------------------------------------▼MW WPフォームここから-->
+  <div class="form_bg">
+    <div class="form">
+
+      <div class="form_item">
+        <div class="form_item_Label">お問い合わせ項目<div class="form_required">必須</div>
+        </div>
+        <div class="form_box">
+          <span class="mwform-radio-field horizontal-item">
+            [mwform_radio name="お問い合わせ項目" class="mwform-radio-field-text" children="無料相談,ご予約,その他"]
+          </span>
+        </div>
+      </div>
+
+      <hr class="hr_contact">
+
+      <div class="form_item">
+        <div class="form_item_Label">ご希望のメニュー</div>
+        <div class="form_left">
+          <div class="form_box">
+            [mwform_select name="ご希望のメニュー" id="" class="form_select" children="選択してください ▼,フェイシャルエステ,痩身エステ,水素吸入エステ,足リフレッシュエステ,ヘッドスッキリエステ,その他" value=""]
+          </div>
+          <div class="red">
+            ※無料相談または、ご予約を選択された方はお選び下さい。
+          </div>
+        </div>
+      </div>
+
+      <hr class="hr_contact">
+
+      <div class="form_item">
+        <div class="form_item_Label">お名前<span class="form_required">必須</span></div>
+        <div class="form_box">
+          [mwform_text name="お名前" id="お名前" class="form_item_input" size="30" placeholder="例：山田 花子"]
+        </div>
+      </div>
+
+      <hr class="hr_contact">
+
+      <div class="form_item">
+        <div class="form_item_Label">ふりがな<span class="form_required">必須</span></div>
+        <div class="form_box">
+          [mwform_text name="ふりがな" id="" class="form_item_input" size="30" placeholder="例：やまだ はなこ"]
+        </div>
+      </div>
+
+      <hr class="hr_contact">
+
+      <div class="form_item">
+        <div class="form_item_Label">性別<div class="form_required">必須</div>
+        </div>
+        <div class="form_box">
+          <span class="mwform-radio-field horizontal-item">
+            [mwform_radio name="性別" id="" class="mwform-radio-field-text" children="女性,男性"]
+          </span>
+        </div>
+      </div>
+      <hr class="hr_contact">
+
+
+      <div class="form_item">
+        <div class="form_item_Label">電話番号<span class="form_required">必須</span></div>
+        <div class="form_box">
+          [mwform_text name="電話番号" id="" class="form_item_input" size="30" placeholder="例：0722609712"]
+        </div>
+      </div>
+      <hr class="hr_contact">
+
+
+      <div class="form_item">
+        <div class="form_item_Label">メールアドレス<span class="form_required">必須</span></div>
+        <div class="form_box">
+          [mwform_text name="メールアドレス" id="" class="form_item_input" size="30" placeholder="例：info@ecxia-labo.com"]
+        </div>
+      </div>
+      <hr class="hr_contact">
+
+      <div class="form_item">
+        <div class="form_item_Label">ご予約希望日</div>
+
+        <div class="yoyaku_block">
+          <div class="yoyaku_flex">
+            <span class="yoyaku_style_day">第1希望日</span>
+            [mwform_datepicker name="第1希望日" id="" class="datedate" size="15" placeholder=""]
+            <!-- <select name="第1希望時間" class="">
+                                <option value="時間指定なし">時間指定なし</option>
+                                <option value="10：00">10：00</option>
+                                <option value="10：30">10：30</option>
+                                <option value="11：00">11：00</option>
+                                <option value="11：30">11：30</option>
+                                <option value="12：00">12：00</option>
+                                <option value="12：30">12：30</option>
+                                <option value="13：00">13：00</option>
+                                <option value="13：30">13：30</option>
+                                <option value="14：00">14：00</option>
+                                <option value="14：30">14：30</option>
+                                <option value="15：00">15：00</option>
+                                <option value="15：30">15：30</option>
+                                <option value="16：00">16：00</option>
+                                <option value="16：30">16：30</option>
+                                <option value="17：00">17：00</option>
+                                <option value="17：30">17：30</option>
+                                <option value="18：00">18：00</option>
+                                <option value="18：30">18：30</option>
+                              </select> -->
+          </div>
+          <div class="yoyaku_flex">
+            <span class="yoyaku_style_day">第2希望日</span>
+            [mwform_datepicker name="第2希望日" id="" class="datedate" size="15" placeholder=""]
+            <!-- <select name="第2希望時間">
+                                <option value="時間指定なし">時間指定なし</option>
+                                <option value="10：00">10：00</option>
+                                <option value="10：30">10：30</option>
+                                <option value="11：00">11：00</option>
+                                <option value="11：30">11：30</option>
+                                <option value="12：00">12：00</option>
+                                <option value="12：30">12：30</option>
+                                <option value="13：00">13：00</option>
+                                <option value="13：30">13：30</option>
+                                <option value="14：00">14：00</option>
+                                <option value="14：30">14：30</option>
+                                <option value="15：00">15：00</option>
+                                <option value="15：30">15：30</option>
+                                <option value="16：00">16：00</option>
+                                <option value="16：30">16：30</option>
+                                <option value="17：00">17：00</option>
+                                <option value="17：30">17：30</option>
+                                <option value="18：00">18：00</option>
+                                <option value="18：30">18：30</option>
+                              </select> -->
+          </div>
+          <div class="yoyaku_flex">
+            <span class="yoyaku_style_day">第3希望日</span>
+            [mwform_datepicker name="第3希望日" id="" class="datedate" size="15" placeholder=""]
+            <!-- <select name="第3希望時間" class="datepicker_time cp_sl03">
+                                <option value="時間指定なし">時間指定なし</option>
+                                <option value="10：00">10：00</option>
+                                <option value="10：30">10：30</option>
+                                <option value="11：00">11：00</option>
+                                <option value="11：30">11：30</option>
+                                <option value="12：00">12：00</option>
+                                <option value="12：30">12：30</option>
+                                <option value="13：00">13：00</option>
+                                <option value="13：30">13：30</option>
+                                <option value="14：00">14：00</option>
+                                <option value="14：30">14：30</option>
+                                <option value="15：00">15：00</option>
+                                <option value="15：30">15：30</option>
+                                <option value="16：00">16：00</option>
+                                <option value="16：30">16：30</option>
+                                <option value="17：00">17：00</option>
+                                <option value="17：30">17：30</option>
+                                <option value="18：00">18：00</option>
+                                <option value="18：30">18：30</option>
+                              </select> -->
+          </div>
+          <div class="yoyaku_flex red">
+            ※無料相談または、ご予約を選択された方はお選び下さい。
+          </div>
+        </div>
+      </div>
+      <hr class="hr_contact">
+
+
+      <div class="form_item">
+        <div class="form_item_Label">お問合せ内容詳細</div>
+        <label>
+          [mwform_textarea name="お問い合わせ内容詳細" class="form_item_textarea" cols="50" rows="5"]
+        </label>
+      </div>
+      <hr class="hr_contact">
+
+      <div class="form_btn">
+        [mwform_submitButton name="確認・送信" confirm_value="確認画面へ" submit_value="送信する"]
+      </div>
+
+    </div>
+  </div>
+
+  <!-------------------------------------------------▲MW WPフォームここまで-->
+</section>

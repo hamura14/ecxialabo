@@ -1,0 +1,511 @@
+.contct_title {
+  &_sp {
+  }
+  &_pc {
+    max-width: 1200px;
+    margin: 0 auto;
+    @include min-screen($tb) {
+    }
+    @include min-screen($pc) {
+    }
+  }
+}
+
+.form_bg {
+  padding: 0 15px;
+  @include min-screen($tb) {
+  }
+  @include min-screen($pc) {
+    padding: 0;
+  }
+}
+
+//---------------------tel---//
+.contact_tel {
+  @include div_center;
+  text-align: center;
+  padding: 0 20px 10px 20px;
+  @include min-screen($tb) {
+    padding: 0 30px 0 30px;
+  }
+  @include min-screen($pc) {
+    max-width: 1000px;
+  }
+
+  &_text {
+    font-weight: bold;
+    font-size: 20px;
+    @include min-screen($tb) {
+      font-size: 34px;
+    }
+    @include min-screen($pc) {
+      font-size: 36px;
+      padding: 0px 0 20px 0;
+    }
+  }
+}
+
+.contact_number {
+  display: flex;
+  @include div_center;
+  @include min-screen($tb) {
+    max-width: 900px;
+  }
+  @include min-screen($pc) {
+    max-width: 1000px;
+  }
+  img {
+    width: 30px;
+    height: auto;
+    @include min-screen($tb) {
+    }
+    @include min-screen($pc) {
+      width: 45px;
+      height: auto;
+    }
+  }
+  &_tel {
+    font-size: 30px;
+    line-height: 1;
+    color: $font;
+    padding-left: 10px;
+    font-weight: bold;
+    @include min-screen($tb) {
+      font-size: 55px;
+    }
+    @include min-screen($pc) {
+      font-size: 58px;
+    }
+  }
+}
+
+.contact_time {
+  font-size: 14px;
+  padding: 10px 0 0 0;
+  @include min-screen($tb) {
+    font-size: 16px;
+  }
+  @include min-screen($pc) {
+    font-size: 18px;
+    padding: 5px 0 30px 0;
+  }
+}
+
+.contact_hr {
+  @include div_center;
+  padding: 20px 0;
+  @include min-screen($tb) {
+  }
+  @include min-screen($pc) {
+    padding: 30px 0;
+  }
+  hr {
+    width: 100%;
+    height: 2px;
+    border: 0;
+    background-color: #d2d2d2;
+    @include min-screen($tb) {
+    }
+    @include min-screen($pc) {
+    }
+  }
+}
+
+//---------------------form---//
+.contact_form {
+  text-align: center;
+  margin: 0 auto;
+  @include min-screen($tb) {
+  }
+  @include min-screen($pc) {
+    max-width: 940px;
+  }
+
+  &_text {
+    font-weight: bold;
+    font-size: 20px;
+    @include min-screen($tb) {
+      font-size: 34px;
+    }
+    @include min-screen($pc) {
+      font-size: 36px;
+      padding-top: 15px;
+    }
+  }
+
+  &_font {
+    font-size: 14px;
+    padding: 10px 0 30px 0;
+    @include min-screen($tb) {
+      font-size: 16px;
+    }
+    @include min-screen($pc) {
+      font-size: 16px;
+      padding: 30px 0 50px 0;
+    }
+  }
+}
+
+.form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  @include min-screen($tb) {
+    max-width: 640px;
+  }
+  @include min-screen($pc) {
+    max-width: 940px;
+  }
+}
+
+.form_item {
+  width: 100%;
+  display: block;
+  @include min-screen($tb) {
+  }
+  @include min-screen($pc) {
+    display: -webkit-box;
+  }
+}
+
+.form_item_Label {
+  width: 100%;
+  font-size: 16px;
+  color: $font;
+  font-weight: bold;
+  padding: 5px 0 5px 0;
+  margin: 0 auto;
+  @include div_center;
+  @include min-screen($tb) {
+    font-size: 16px;
+  }
+  @include min-screen($pc) {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
+    margin: 0;
+    text-align: left;
+    align-items: center;
+  }
+}
+
+.form_required {
+  background-color: $purple;
+  color: $white;
+  margin-left: 10px;
+  width: 48px;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  @include min-screen($tb) {
+  }
+  @include min-screen($pc) {
+    margin-right: 30px;
+  }
+}
+
+.form_box {
+  display: block;
+  line-height: 1.8;
+  color: $font;
+  text-align: left;
+  width: 100%;
+  @include min-screen($tb) {
+    margin: 0 0 0 10px;
+  }
+  @include min-screen($pc) {
+    text-align: left;
+    margin: 0 auto 0 0;
+    width: 70%;
+  }
+}
+
+::placeholder {
+  color: #b8b8b8;
+}
+
+.red {
+  color: #f01b2a;
+  text-align: left;
+  font-size: 14px;
+  padding: 5px 10px 0 0;
+  @include min-screen($tb) {
+  }
+  @include min-screen($pc) {
+    padding: 5px 0 0 0;
+  }
+}
+
+.form_item_input {
+  border: 1px solid #efefef;
+  background: #f7f7f7;
+  padding: 10px 10px 10px 12px;
+  width: 100%;
+  @include min-screen($tb) {
+    width: 100%;
+  }
+  @include min-screen($pc) {
+    width: 60%;
+  }
+}
+
+.cp_ipselect {
+  overflow: hidden;
+  margin: 20px;
+}
+.cp_ipselect select {
+  width: 95%;
+  margin: 0 auto;
+  padding-right: 1em;
+  cursor: pointer;
+  text-indent: 0.01px;
+  text-overflow: ellipsis;
+  border: none;
+  outline: none;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+  // -webkit-appearance: none;
+  // appearance: none;
+  @include min-screen($tb) {
+  }
+  @include min-screen($pc) {
+    width: 100%;
+  }
+}
+// .cp_ipselect select::-ms-expand {
+//   display: none;
+// }
+.cp_ipselect.cp_sl03 {
+  position: relative;
+  margin: 0 auto;
+  border-radius: 2px;
+  border: 1px solid #efefef;
+  @include min-screen($tb) {
+  }
+  @include min-screen($pc) {
+    margin: auto 0;
+  }
+}
+// .cp_ipselect.cp_sl03::before {
+//   position: absolute;
+//   top: 1.2em;
+//   right: 0.8em;
+//   width: 0;
+//   height: 0;
+//   padding: 0;
+//   content: "";
+//   border-left: 6px solid transparent;
+//   border-right: 6px solid transparent;
+//   border-top: 8px solid #af66a1;
+//   pointer-events: none;
+// }
+.cp_ipselect.cp_sl03 select {
+  padding: 10px 10px 10px 12px;
+  background-color: #f7f7f7;
+  width: 100%;
+  @include min-screen($tb) {
+  }
+  @include min-screen($pc) {
+    padding: 10px 38px 10px 12px;
+  }
+}
+
+.datepicker {
+  padding: 10px;
+  text-align: center;
+  @include min-screen($tb) {
+  }
+  @include min-screen($pc) {
+    padding: 0;
+    text-align: left;
+    display: flex;
+  }
+}
+
+.hr_contact {
+  width: 100%;
+  height: 1px;
+  border: 0;
+  background-color: #dcdcdc;
+  @include min-screen($tb) {
+  }
+  @include min-screen($pc) {
+    text-align: left;
+    max-width: 100%;
+    margin: 20px 0;
+  }
+}
+
+.form_item_textarea {
+  width: 100%;
+  @include min-screen($tb) {
+    // width: 65%;
+  }
+  @include min-screen($pc) {
+    width: 100%;
+  }
+}
+
+.form_btn {
+  @include div_center;
+  margin-top: 30px;
+  @include min-screen($tb) {
+  }
+  @include min-screen($pc) {
+    margin-bottom: 80px;
+  }
+  input {
+    background-color: #af66a1;
+    padding: 15px;
+    margin: 0 auto;
+    color: $white;
+    width: 70%;
+    border: 1px solid #af66a1;
+    display: block;
+    @include min-screen($tb) {
+    }
+    @include min-screen($pc) {
+      width: 240px;
+    }
+  }
+}
+
+.lp_notice_text {
+  text-align: left;
+  color: $red;
+  font-size: 11px;
+  padding: 8px 10px 5px 10px;
+  @include min-screen($tb) {
+    font-size: 14px;
+    padding: 5px 0 0 0;
+  }
+  @include min-screen($pc) {
+    padding: 5px 0 0 0;
+    text-align: center;
+  }
+}
+
+.datedate {
+  padding: 8px;
+  @include min-screen($tb) {
+  }
+  @include min-screen($pc) {
+  }
+}
+
+.yoyaku_style {
+  @include min-screen($tb) {
+  }
+  @include min-screen($pc) {
+    display: flex;
+  }
+  &_day {
+    @include min-screen($tb) {
+    }
+    @include min-screen($pc) {
+      font-size: 16px;
+      padding: 0 5px 0 0;
+    }
+  }
+}
+.yoyaku_flex {
+  padding: 0 10px 10px 10px;
+  @include min-screen($tb) {
+  }
+  @include min-screen($pc) {
+    display: flex;
+    align-items: center;
+    padding: 0 10px 10px 10px;
+  }
+}
+.yoyaku_block {
+  display: block;
+  @include min-screen($tb) {
+  }
+  @include min-screen($pc) {
+  }
+}
+
+.datepicker_time_text {
+  margin-left: 30px;
+  @include min-screen($tb) {
+  }
+  @include min-screen($pc) {
+  }
+}
+.datepicker_time {
+  overflow: hidden;
+  margin: 20px;
+  width: 50%;
+  // text-align: center;
+}
+.datepicker_time select {
+  width: 100%;
+  padding-right: 1em;
+  cursor: pointer;
+  text-indent: 0.01px;
+  text-overflow: ellipsis;
+  border: none;
+  outline: none;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+  // -webkit-appearance: none;
+  // appearance: none;
+}
+// .datepicker_time select::-ms-expand {
+//   display: none;
+// }
+.datepicker_time.cp_sl03 {
+  position: relative;
+  margin: auto 0 auto 20px;
+  border-radius: 2px;
+  border: 1px solid #efefef;
+}
+.datepicker_time.cp_sl03::before {
+  position: absolute;
+  top: 1.2em;
+  right: 0.8em;
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: "";
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid #af66a1;
+  pointer-events: none;
+}
+.datepicker_time.cp_sl03 select {
+  padding: 10px 38px 10px 12px;
+  background-color: #f7f7f7;
+  @include min-screen($tb) {
+  }
+  @include min-screen($pc) {
+    width: 270px;
+  }
+}
+
+.form_left {
+  margin: 0 0 0 0;
+  @include min-screen($tb) {
+    width: 100%;
+  }
+  @include min-screen($pc) {
+    margin: 0 0 0 0;
+  }
+}
+
+.form_select {
+  padding: 5px 10px 5px 5px;
+  border-color: #3d3d3d61;
+  background-color: $white;
+  @include min-screen($tb) {
+  }
+  @include min-screen($pc) {
+  }
+}
+.form_select ::placeholder {
+  color: $font;
+}

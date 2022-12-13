@@ -1,0 +1,19 @@
+<svg id="sp_icon_tel.svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85" height="85" viewBox="0 0 85 85">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #af66a1;
+      }
+
+      .cls-2 {
+        font-size: 8.997px;
+        fill: #fff;
+        text-anchor: middle;
+        font-family: "Noto Serif JP";
+      }
+    </style>
+  </defs>
+  <rect id="長方形_27_のコピー_2" data-name="長方形 27 のコピー 2" class="cls-1" width="85" height="85"/>
+  <image id="シンプルな受話器のアイコン" x="25" y="12" width="35" height="35" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAACCUlEQVRYhb2YPWtUQRSGn43JFgq7jWWIBFKJwR8QMMQ6phMEg411inT+AWHBRgRFMCks/AEWWogkENCQIookYKFE0GgTGwslIPLK0bmLu7m7cybOvS+cZWHPzH125nztIqnfbkj6LGlb0nTJ55VZ/8Yd9eqgTqBhIIVqAyre3BwAUiuQvVyKgNQGNAIs4dNpYA2Ydvonq2HfODzIq31gAlBuGDuZscQ140ArN0gB8zVxzVPgW1Uwuwn+68DlKkAKmI0EkHngR1UwFsBTwLuI34eQRd+rAiGczHtgM+L3rGqQAsZ0L+I3CzSrhimq35ikj5EKfLvORnnd0RKu1AUzKmknAnMoaaYOGLM5Z8M8WweM2YoDaN9KQm6Yxh+iXrWBN8CZSOxb7bkQGmcWjZRsYn3nKvAr8oDJUL2ncsEMO7Zlx3UVV+aNobakRkrM/GsPnUAHkSw7KelJ8P00aGKMwTQlPXcCHQ6oQwayVgJ/BMhztC1JW04ghUrdDGtPlYAMBPKmXTsR6K2k+5L2In49QCl1oJVwZSnqApXVmWGyzv0AuJYtnf/KRt+LqTCFloFbwImMQK+OC2OaAR45KrVXX8oqsFcvgPPAaiaYO7ma3Jxj/BimTmo2xWw0DGixibFfneOkttdshF2U9NIBYv9+dPf9nwD2yDr6Qhg1zoXf9D+B18Bd4HF3E+A3FSHWxIuO9EwAAAAASUVORK5CYII="/>
+  <text id="Tel" class="cls-2" transform="translate(42.156 75.335) scale(2.445)">Tel</text>
+</svg>

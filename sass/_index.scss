@@ -1,0 +1,684 @@
+// a.disabled {
+//   pointer-events: none;
+// }
+
+// .wrap {
+//   width: 100%;
+// }
+
+// .menu {
+//   color: $font;
+//   @include edge-m10;
+//   @include mincho;
+// }
+
+.font_14 {
+  font-size: 14px;
+}
+.font_pink_bold {
+  color: #f07da2;
+  font-weight: bold;
+}
+// .font_26 {
+//   font-size: 26px;
+// }
+
+// .top_underline {
+//   @include underline;
+//   @include div_center;
+// }
+
+// .top_underlinewhite {
+//   @include underlinewhite;
+//   @include div_center;
+// }
+
+//---------------------Catch---//
+.top_catch {
+  text-align: center;
+  max-width: 1260px;
+  margin: 0 auto;
+  justify-content: center;
+  &_sp {
+    img {
+      max-width: 960px;
+    }
+  }
+  &.top_catch_pc {
+    img {
+    }
+  }
+}
+
+//---------------------big title---//
+.top_bigtitle {
+  text-align: center;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+  @include min-screen($tb) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  @include min-screen($pc) {
+    max-width: 1000px;
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+
+  h2 {
+    color: $font;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 10px;
+    line-height: 1.2;
+    @include min-screen($tb) {
+      font-size: 32px;
+      font-weight: bold;
+      padding: 0 15px;
+      line-height: 1.3;
+    }
+    @include min-screen($pc) {
+      font-size: 36px;
+      font-weight: bold;
+      padding: 0 30px;
+      line-height: 1.3;
+    }
+  }
+}
+
+.top_popular {
+  @include min-screen($tb) {
+    max-width: 960px;
+  }
+  @include min-screen($pc) {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 70px;
+  }
+
+  &_box-1 {
+    @include min-screen($tb) {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    @include min-screen($pc) {
+      max-width: 320px;
+    }
+    img {
+      @include div_center;
+      padding: 0 30px;
+      max-width: 320px;
+      display: block;
+      @include min-screen($tb) {
+        max-width: 380px;
+      }
+      @include min-screen($pc) {
+        padding: 0 0;
+      }
+    }
+  }
+  &_box-2 {
+    @include min-screen($tb) {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    @include min-screen($pc) {
+      max-width: 320px;
+    }
+    img {
+      @include div_center;
+      padding: 0 30px;
+      max-width: 320px;
+      display: block;
+      @include min-screen($tb) {
+        max-width: 380px;
+      }
+      @include min-screen($pc) {
+        padding: 0 0;
+      }
+    }
+  }
+  &_box-3 {
+    @include min-screen($tb) {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    @include min-screen($pc) {
+      max-width: 320px;
+    }
+    img {
+      @include div_center;
+      padding: 0 30px;
+      max-width: 320px;
+      display: block;
+      @include min-screen($tb) {
+        max-width: 380px;
+      }
+      @include min-screen($pc) {
+        padding: 0 0;
+      }
+    }
+  }
+
+  &_text {
+    font-size: 14px;
+    color: $font;
+    padding: 10px 10px 30px 10px;
+    @include min-screen($tb) {
+      font-size: 16px;
+    }
+    @include min-screen($pc) {
+      padding: 10px 5px 30px 5px;
+      padding-top: 10px;
+      font-size: 16px;
+    }
+  }
+}
+
+//---------------------jikkan---//
+
+.top_bgpink {
+  background-color: #fef3fa;
+  width: 100%;
+  margin: 0 auto;
+  @include min-screen($tb) {
+  }
+  @include min-screen($pc) {
+    margin: 0;
+    padding: 30px 0 0 0;
+  }
+
+  &_img {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 10px 30px 10px;
+    justify-content: center;
+    @include min-screen($tb) {
+      padding: 20px 20px 40px 20px;
+    }
+    @include min-screen($pc) {
+      padding: 20px 10px 40px 10px;
+    }
+    &_sp {
+      img {
+        max-width: 960px;
+      }
+    }
+    &.top_catch_pc {
+      img {
+        max-width: 1000px;
+        padding: 0 0 40px 0;
+      }
+    }
+  }
+
+  &_closing {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0 15px 30px 15px;
+    @include min-screen($tb) {
+      font-size: 20px;
+      text-align: center;
+    }
+    @include min-screen($pc) {
+      font-size: 30px;
+      text-align: center;
+      padding: 0 0 40px 0;
+    }
+  }
+}
+
+.top_why {
+  max-width: 601px;
+  margin: 20px auto;
+  padding: 0 10px 0 10px;
+  @include min-screen($tb) {
+    max-width: 450px;
+    text-align: center;
+    margin: 30px auto;
+  }
+  @include min-screen($pc) {
+    max-width: 601px;
+    text-align: center;
+    margin: 50px auto 20px auto;
+  }
+}
+
+//---------------------riyuu---//
+.top_riyuu {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  @include min-screen($tb) {
+  }
+  @include min-screen($pc) {
+    padding-top: 50px;
+    justify-content: center;
+  }
+  &_title {
+    color: $font;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 3px;
+    text-align: center;
+    line-height: 1.4;
+    @include min-screen($tb) {
+      font-size: 28px;
+      font-weight: bold;
+      padding: 0 15px;
+    }
+    @include min-screen($pc) {
+      font-size: 36px;
+      font-weight: bold;
+      padding: 0 20px;
+    }
+    &_pink {
+      color: $pink;
+      font-size: 28px;
+      font-weight: bold;
+      @include min-screen($tb) {
+        font-size: 36px;
+      }
+      @include min-screen($pc) {
+        font-size: 45px;
+      }
+    }
+  }
+  &_img {
+    img {
+      max-width: 30px;
+      padding: 40px 0 20px 0;
+      @include min-screen($tb) {
+        max-width: 30px;
+        padding: 20px 0 40px 0;
+      }
+      @include min-screen($pc) {
+        max-width: 30px;
+        padding: 25px 0 40px 0;
+      }
+    }
+  }
+}
+
+.top_riyuu_text {
+  padding: 0 20px 20px 20px;
+  max-width: 1000px;
+  text-align: center;
+  font-size: 14px;
+  @include div_center;
+  @include min-screen($tb) {
+    padding: 0 30px 30px 30px;
+    font-size: 16px;
+  }
+  @include min-screen($pc) {
+    max-width: 1000px;
+    padding: 0 20px 0 20px;
+    font-size: 16px;
+  }
+}
+
+.top_riyuu_box {
+  justify-content: center;
+  margin: 10px 15px 0 15px;
+  @include min-screen($tb) {
+    padding: 0 30px 0 30px;
+  }
+  @include min-screen($pc) {
+    margin: 40px auto 0 auto;
+    display: flex;
+    max-width: 1000px;
+  }
+
+  &_img {
+    @include min-screen($tb) {
+      margin: 0 auto;
+      text-align: center;
+    }
+    @include min-screen($pc) {
+    }
+    img {
+      @include min-screen($tb) {
+        max-width: 370px;
+      }
+      @include min-screen($pc) {
+        width: 370px;
+      }
+    }
+  }
+
+  &_outer {
+    margin: 0 0 30px 0;
+    @include min-screen($tb) {
+      margin: 0 0 0 0;
+    }
+    @include min-screen($pc) {
+      margin: 0 0 0 30px;
+    }
+    &_innner {
+      display: block;
+      text-align: center;
+      margin: 15px 0 10px 0;
+      @include min-screen($tb) {
+        display: inline-flex;
+        justify-content: center;
+        margin: 20px 0 20px auto;
+        text-align: left;
+      }
+      @include min-screen($pc) {
+        display: inline-flex;
+        margin: 0 0 0 0;
+      }
+      &_square {
+        background-color: $pink;
+        color: white;
+        padding: 3px;
+        font-size: 14px;
+        font-weight: bold;
+        max-width: 60px;
+        margin: 0 auto;
+        @include min-screen($tb) {
+          font-size: 20px;
+          max-width: 80px;
+        }
+        @include min-screen($pc) {
+          font-size: 20px;
+          max-width: 100px;
+        }
+        &_num {
+          font-weight: bold;
+          line-height: 1;
+          font-size: 24px;
+          @include min-screen($tb) {
+            font-size: 30px;
+          }
+          @include min-screen($pc) {
+            font-size: 38px;
+          }
+        }
+      }
+      &_title {
+        color: $pink;
+        font-weight: bold;
+        line-height: 1.5;
+        padding: 10px 0 0 0;
+        @include min-screen($tb) {
+          font-size: 24px;
+          padding: 0 0 0 10px;
+          line-height: 1.5;
+        }
+        @include min-screen($pc) {
+          font-size: 22px;
+          padding: 0 0 0 10px;
+          line-height: 2.3;
+        }
+      }
+    }
+    &_text {
+      font-size: 14px;
+      @include min-screen($tb) {
+        font-size: 16px;
+        margin: 0 auto 50px auto;
+      }
+      @include min-screen($pc) {
+        font-size: 16px;
+        width: 560px;
+      }
+    }
+  }
+}
+
+//---------------------closing---//
+.top_closing {
+  background-image: url("../img/top_closing_bg_sp.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  padding: 20px 15px 20px 15px;
+  @include min-screen($tb) {
+    margin: 70px auto 0 auto;
+  }
+  @include min-screen($pc) {
+    background-image: url("../img/top_closing_bg.jpg");
+    max-width: 1200px;
+    margin: 70px auto 0 auto;
+    padding: 30px 30px 30px 30px;
+  }
+  &_white {
+    background-color: $white;
+    padding: 15px 10px 15px 10px;
+    width: 100%;
+    margin: 0 auto;
+    @include min-screen($tb) {
+      width: 90%;
+    }
+    @include min-screen($pc) {
+      width: 900px;
+      margin: auto auto;
+      padding: 20px 20px 20px 20px;
+    }
+    &_text {
+      text-align: center;
+      font-weight: bold;
+      @include min-screen($tb) {
+        font-size: 20px;
+      }
+      @include min-screen($pc) {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+//---------------------top_flow---//
+.top_flowbg {
+  width: 100%;
+  background-color: #f1f8ff;
+  margin: 50px 0 30px 0;
+  padding: 30px 0 30px 0;
+  text-align: center;
+  @include min-screen($tb) {
+  }
+  @include min-screen($pc) {
+    margin: 70px 0 20px 0;
+    padding: 50px 0 50px 0;
+  }
+}
+
+.top_flow {
+  max-width: 1000px;
+  @include div_center;
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    @include min-screen($tb) {
+      font-size: 30px;
+    }
+    @include min-screen($pc) {
+      font-size: 36px;
+    }
+  }
+}
+
+.top_flowbox {
+  margin-top: 20px;
+  @include min-screen($tb) {
+    display: flex;
+    justify-content: space-around;
+  }
+  @include min-screen($pc) {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+
+  &_item {
+    padding: 20px 20px 0 20px;
+    width: 100%;
+    @include min-screen($tb) {
+      padding: 10px 10px 10px 10px;
+      width: 30%;
+    }
+    @include min-screen($pc) {
+      padding: 20px 20px 0 20px;
+      width: 30%;
+    }
+    img {
+      width: 65%;
+      @include min-screen($tb) {
+        width: 80%;
+      }
+      @include min-screen($pc) {
+        width: 227px;
+      }
+    }
+
+    &_title {
+      font-weight: bold;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 18px;
+      @include min-screen($tb) {
+      }
+      @include min-screen($pc) {
+        font-size: 24px;
+      }
+    }
+
+    &_text {
+      text-align: left;
+      font-size: 14px;
+      @include min-screen($tb) {
+      }
+      @include min-screen($pc) {
+      }
+    }
+  }
+}
+
+//---------------------Blog---//
+.blog_space {
+  margin-top: 20px;
+  @include min-screen($tb) {
+    margin-top: 50px;
+  }
+  @include min-screen($pc) {
+    margin-top: 70px;
+  }
+}
+
+.mt-5 {
+  background-color: #f3f3f3;
+  padding: 30px 0 10px 0;
+  @include min-screen($tb) {
+    padding: 30px 0 10px 0;
+  }
+  @include min-screen($pc) {
+    padding: 50px 0 30px 0;
+  }
+}
+.top_news {
+  max-width: 1200px;
+  @include div_center;
+
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    @include min-screen($tb) {
+      font-size: 30px;
+    }
+    @include min-screen($pc) {
+      font-size: 36px;
+    }
+  }
+
+  &_list {
+    margin: 32px 0 20px;
+    @include maxwidthContent;
+    // @include gothicFont;
+
+    li {
+      border-bottom: 1px solid #b8b8b8;
+
+      &:first-child {
+        border-top: 1px solid #b8b8b8;
+      }
+
+      a {
+        padding: 20px 0;
+        color: $font;
+        font-weight: normal;
+        @media screen and (min-width: $tb) {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+        }
+        @include min-screen($pc) {
+          padding-left: 20px;
+        }
+
+        &:hover {
+          background: $hoverBg;
+          opacity: 1;
+        }
+
+        time {
+          font-size: 14px;
+          @media screen and (min-width: $tb) {
+            margin-right: 16px;
+          }
+          @media screen and (min-width: $pc) {
+            font-size: 16px;
+            margin-right: 32px;
+          }
+        }
+
+        p {
+          .new {
+            background: $orange;
+            font-size: 13px;
+            padding: 1px 10px;
+            color: $white;
+            margin-left: 0;
+            @media screen and (min-width: $tb) {
+              margin-left: 10px;
+            }
+            @media screen and (min-width: $pc) {
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.top_shop_btn {
+  background-color: $purple;
+  font-size: 14px;
+  width: 200px;
+  margin: 0 auto 30px auto;
+  text-align: center;
+  padding: 10px;
+  @media screen and (min-width: $tb) {
+    font-size: 16px;
+    padding: 15px;
+  }
+  @media screen and (min-width: $pc) {
+    font-size: 16px;
+    padding: 15px;
+    margin: 40px auto 30px auto;
+  }
+  a {
+    color: $white;
+  }
+}

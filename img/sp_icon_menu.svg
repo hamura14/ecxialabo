@@ -1,0 +1,28 @@
+<svg id="sp_icon_menu.svg" xmlns="http://www.w3.org/2000/svg" width="85" height="85" viewBox="0 0 85 85">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #af66a1;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-4 {
+        font-size: 8.997px;
+        text-anchor: middle;
+        font-family: "Noto Serif JP";
+      }
+    </style>
+  </defs>
+  <rect id="長方形_27" data-name="長方形 27" class="cls-1" width="85" height="85"/>
+  <path id="長方形_28" data-name="長方形 28" class="cls-2" d="M557,22.995h41v6.434H557V22.995Z" transform="translate(-535 -10)"/>
+  <rect id="長方形_28_のコピー" data-name="長方形 28 のコピー" class="cls-3" x="22" y="26.781" width="41" height="6.438"/>
+  <path id="長方形_28_のコピー_2" data-name="長方形 28 のコピー 2" class="cls-2" d="M557,50.57h41V57H557V50.57Z" transform="translate(-535 -10)"/>
+  <text id="Menu" class="cls-4" transform="translate(42.156 74.335) scale(2.445)">Menu</text>
+</svg>

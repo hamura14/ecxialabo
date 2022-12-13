@@ -1,0 +1,19 @@
+<svg id="sp_icon_mail.svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85" height="85" viewBox="0 0 85 85">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #af66a1;
+      }
+
+      .cls-2 {
+        font-size: 8.179px;
+        fill: #fff;
+        text-anchor: middle;
+        font-family: "Noto Serif JP";
+      }
+    </style>
+  </defs>
+  <rect id="長方形_27_のコピー" data-name="長方形 27 のコピー" class="cls-1" width="85" height="85"/>
+  <image id="メールのアイコン素材_その3" data-name="メールのアイコン素材 その3" x="18" y="10" width="49" height="37" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAlCAYAAADr2wGRAAACZ0lEQVRYhe2ZO2gUURSGv02CURAMVj6QdEEEsfCFIZAiYGEE351IFEWwURutRMFUsbMxxMZCsDBRRNBKQQSjoIWvFGokyzYWCUjQGF/55Ya7sJncayY7M/GuzA+HZWbOuef/d+fcew5bkPQYWEPtotRgBTTXsAjqAuCQGP+FiAbHvZvAk3/AJS5agQOVvi4R94BrQdGeic9REXlNhAKfiKXABfsZCrYAjfP5JUytnAfeA8c8tbNQaAH6gWfAkvmImADMSb4C6ANeAjsXmPxKoBcYAvYBr4FvLkefiB9AB3DZXq8D7gIPgY3Z8Z7GMqAb+AAcB+qBG8A24LszQtKIZqJLEhV2UNJEhceUpOuSmiN+Sa1R0mlJoxW5fkk6FVm3K8J3JI4IYxskfYz4TUrqkdSUkHydpEOSipH1P0lqd/hXLcLYckn3NRtjkk5KWlSFgE5JrxxrPpW02hOTSISxekkXHUkNhiXtl1SIQX6rpEeedXrn+EISiyjbLknjHhKDkto8cWsl3fLEmdfzSIzcqYkw1iJpyEPIYMD6GN9Vkq7aQnXB1MOmmHlniUjSdryzp+iA5/le4C1wGxgGjtrtMorytv28WiJJe6cvtqM8C0w5npuTfjew2BN/CdgOjCYhkUYDKKDHkhmLGfPVij8D/E5KIM0u9oE9zV/M4Vd+DfvTSpx2K14E2v4yVN0BNtt+KDVkMU9MAoeBE8BPe8/UyzlgDzCedsIsh6IrQDvwBui0TZ2ySJT1nDAIrM84Rz5jB4NcRCjIRYQC1xa7A2gKmHNr9EZheqio7f8ninlNhAJTE6WaVgClP/fvM3FpBpiFAAAAAElFTkSuQmCC"/>
+  <text id="ご予約" class="cls-2" transform="translate(41.156 73.335) scale(2.445)">ご予約</text>
+</svg>

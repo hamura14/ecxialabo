@@ -1,0 +1,41 @@
+.privacy {
+  @include maxwidthContent;
+
+  &_item {
+    h2 {
+      color: $purple;
+      font-size: 16px;
+      font-weight: bold;
+      border-bottom: 1px solid $purple;
+      margin: 40px 0 10px;
+      padding: 0 0 10px 0;
+      @include min-screen($tb) {
+        font-size: 18px;
+        margin: 40px 0 16px;
+      }
+      @include min-screen($pc) {
+        font-size: 18px;
+        margin: 40px 0 18px;
+      }
+    }
+    p {
+      font-size: 14px;
+      @include min-screen($tb) {
+        font-size: 16px;
+      }
+      @include min-screen($pc) {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.privacy_description {
+  font-size: 14px;
+  @include min-screen($tb) {
+    font-size: 16px;
+  }
+  @include min-screen($pc) {
+    font-size: 16px;
+  }
+}

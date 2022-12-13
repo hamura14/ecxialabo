@@ -1,0 +1,143 @@
+@mixin maxWidth {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin edge-m10 {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+@mixin mincho {
+  font-family: "Noto Serif JP", serif;
+}
+
+@mixin gothicFont {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+@mixin div_center {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+@mixin underline {
+  width: 250px;
+  border-bottom: solid 3px black;
+  padding: 15px 0;
+}
+
+@mixin underlinewhite {
+  width: 250px;
+  border-bottom: solid 3px white;
+  padding: 15px 0;
+}
+
+@mixin btnstyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $navy;
+  margin: 0 auto;
+}
+
+@mixin btnstylewhite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  margin: 0 auto;
+}
+
+// 下層ページ（背景タイトル画像）
+@mixin backgroundTitle($urlSp, $urlPc, $color) {
+  background: $color;
+
+  &_inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 110px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background: url($urlSp) no-repeat;
+    padding: 0 20px;
+
+    @include min-screen($tb) {
+      height: 140px;
+      padding: 0 40px;
+    }
+
+    @include min-screen($pc) {
+      background: url($urlPc) no-repeat;
+      padding: 0 50px;
+      height: 248px;
+      max-width: 1260px;
+      margin-right: auto;
+      margin-left: auto;
+      text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+        0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff,
+        0 0 3px #fff;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: bold;
+
+      @include min-screen($tb) {
+        font-size: 26px;
+      }
+
+      @include min-screen($pc) {
+        font-size: 48px;
+      }
+    }
+  }
+}
+
+// 最大幅指定
+@mixin maxwidthContent($width: 1000px, $side: 20px) {
+  padding-right: $side;
+  padding-left: $side;
+
+  @include min-screen($pc) {
+    max-width: $width;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+// 下層ページ最上部文言
+@mixin firstText {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.6;
+
+  @include min-screen($pc) {
+    font-size: 36px;
+  }
+}
+
+// タイトル(Top Border)
+@mixin ttlTopBorder {
+  margin: 32px 0 16px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  border-top: 2px solid $font;
+  padding: 28px 0 14px;
+
+  @media screen and (min-width: $tb) {
+    font-size: 28px;
+    margin-top: 48px;
+  }
+  @media screen and (min-width: $pc) {
+    font-size: 50px;
+    padding: 48px 0 24px;
+    @include maxwidthContent;
+  }
+}

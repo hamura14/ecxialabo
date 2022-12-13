@@ -1,0 +1,291 @@
+.blog_background {
+  // @include backgroundTitle($urlSp: "../img/blog_top_sp.jpg", $urlPc: "../img/blog_top.jpg", $color: #f8f8f8);
+}
+
+// 一覧
+.blog {
+  @include maxwidthContent;
+  margin-top: 20px;
+  @media screen and (min-width: $tb) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  @media screen and (min-width: $pc) {
+    margin-top: 30px;
+  }
+
+  &_content {
+    @media screen and (min-width: $tb) {
+      width: 68%;
+    }
+    @media screen and (min-width: $pc) {
+      width: calc(100% - 290px);
+    }
+
+    h2 {
+      font-size: 16px;
+      color: $white;
+      background: $purple;
+      padding: 5px;
+      text-align: center;
+      @media screen and (min-width: $pc) {
+        font-size: 26px;
+        padding: 10px;
+      }
+    }
+
+    &_list {
+      margin-bottom: 20px;
+
+      li {
+        border-bottom: 1px dotted $font;
+
+        a {
+          padding: 15px 0;
+          color: $font;
+          font-weight: normal;
+          @media screen and (min-width: $tb) {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+          }
+          @media screen and (min-width: $pc) {
+            padding: 20px 0;
+          }
+
+          &:hover {
+            background: $hoverBg;
+            opacity: 1;
+          }
+
+          time {
+            font-size: 14px;
+            color: $purple;
+            @media screen and (min-width: $tb) {
+              margin-right: 16px;
+            }
+            @media screen and (min-width: $pc) {
+              font-size: 14px;
+              margin-right: 20px;
+            }
+          }
+
+          h3 {
+            font-size: 14px;
+            @media screen and (min-width: $tb) {
+              font-size: 16px;
+            }
+            @media screen and (min-width: $pc) {
+              font-size: 16px;
+            }
+            .new {
+              background: $orange;
+              font-size: 13px;
+              padding: 1px 10px;
+              color: $white;
+              margin-left: 0;
+              @media screen and (min-width: $tb) {
+                margin-left: 10px;
+              }
+              @media screen and (min-width: $pc) {
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 詳細
+.detail_content {
+  @media screen and (min-width: $tb) {
+    width: 68%;
+  }
+  @media screen and (min-width: $pc) {
+    width: calc(100% - 290px);
+  }
+
+  &_ttl {
+    font-size: 18px;
+    color: $purple;
+    // background: $purple;
+    padding: 14px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    @media screen and (min-width: $tb) {
+      // display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    h1 {
+      font-weight: bold;
+      margin-right: 16px;
+      border-bottom: 1px solid #d9d9d9;
+      padding-bottom: 20px;
+      @media screen and (min-width: $tb) {
+        margin-right: 22px;
+        padding-bottom: 20px;
+      }
+      @media screen and (min-width: $pc) {
+        font-size: 24px;
+        padding-bottom: 20px;
+        margin: 0;
+      }
+    }
+
+    time {
+      font-size: 14px;
+      @media screen and (min-width: $tb) {
+        margin-right: 16px;
+      }
+      @media screen and (min-width: $pc) {
+        font-size: 16px;
+        margin-right: 32px;
+      }
+    }
+  }
+
+  &_img {
+    margin-bottom: 16px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// ブログエディター
+@import "editor";
+
+// ページネーション
+.pagenation ul {
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+
+  li {
+    list-style: none outside none;
+    margin-left: 8px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    a {
+      display: inherit;
+      border: 1px solid $border;
+      color: $font;
+      padding: 8px 14px;
+      font-weight: 700;
+      opacity: 1;
+
+      &:hover {
+        background: $hoverBg;
+        color: $navy;
+        transition: 0.4s;
+      }
+    }
+  }
+
+  .active {
+    border: 1px solid $border;
+    background: $orange;
+    color: $white;
+    cursor: not-allowed;
+    padding: 8px 14px;
+  }
+
+  @include min-screen($tb) {
+    li {
+      margin-left: 16px;
+
+      a {
+        padding: 12px 16px;
+      }
+    }
+
+    .active {
+      padding: 12px 16px;
+    }
+  }
+
+  @include min-screen($pc) {
+    li {
+      margin-left: 20px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      a {
+        padding: 10px 18px;
+      }
+    }
+
+    .active {
+      padding: 10px 18px;
+    }
+  }
+}
+
+// サイドバー
+.sidebar {
+  @media screen and (min-width: $tb) {
+    width: 30%;
+  }
+
+  @media screen and (min-width: $pc) {
+    max-width: 260px;
+    width: 100%;
+  }
+
+  &_item {
+    margin-bottom: 32px;
+
+    h3 {
+      font-size: 16px;
+      color: $white;
+      background: $purple;
+      padding: 5px;
+      text-align: center;
+      @media screen and (min-width: $tb) {
+        padding: 10px;
+      }
+      @media screen and (min-width: $pc) {
+        padding: 10px;
+      }
+    }
+
+    &_list {
+      text-align: center;
+      border-right: 1px solid $border;
+      border-bottom: 1px solid $border;
+      border-left: 1px solid $border;
+      background-color: #af66a112;
+
+      li {
+        border-bottom: 1px solid $border;
+        margin: 0 10px;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        a {
+          padding: 12px;
+          color: $font;
+          font-weight: normal;
+
+          &:hover {
+            color: $navy;
+            opacity: 1;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
